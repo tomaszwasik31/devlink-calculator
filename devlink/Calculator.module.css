@@ -1,0 +1,279 @@
+.calculator-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--main-2626d15c);
+  background-image: linear-gradient(226deg, hsla(252.75862068965515, 100.00%, 65.88%, 1.00) 55%, hsla(252.75862068965515, 95.01%, 59.89%, 1.00) 75%);
+}
+
+.phone-container {
+  display: flex;
+  width: 300px;
+  height: 600px;
+  flex-direction: column;
+  align-items: center;
+
+  border-style: solid;
+  border-width: 15px;
+  border-color: hsla(253.10344827586204, 100.00%, 65.88%, 0.85);
+  border-radius: 40px;
+
+  background-color: var(--white-4c6ea64b);
+}
+
+.display-container {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  background-color: hsla(300, 0.00%, 98.00%, 1.00);
+}
+
+.speaker {
+  display: flex;
+  width: 140px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  background-color: hsla(253.10344827586204, 100.00%, 65.88%, 0.83);
+}
+
+.speaker-detail {
+  width: 80px;
+  height: 6px;
+  border-radius: 16px;
+  background-color: var(--main-2626d15c);
+}
+
+.display-numbers-cointainer {
+  display: flex;
+  width: 100%;
+  margin-bottom: 22px;
+  flex-direction: column;
+  align-items: flex-end;
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+}
+
+.p-small-display {
+  font-family: Lato, sans-serif;
+  font-size: 40px;
+  line-height: 0px;
+  font-weight: 300;
+}
+
+.p-big-display {
+  font-family: Lato, sans-serif;
+  font-size: 80px;
+  line-height: 0px;
+  font-weight: 300;
+}
+
+.btn-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+}
+
+.btn {
+  display: flex;
+  padding: 0px 10px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100%;
+
+  background-color: transparent;
+
+  transition: all 100ms ease;
+
+  font-family: Lato, sans-serif;
+  color: var(--black-43573790);
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.btn:active {
+  box-shadow: 0 2px 5px 7px var(--main-2626d15c);
+}
+
+.btn.smaller {
+  font-size: 18px;
+}
+
+.btn.smaller.purple {
+  color: var(--main-2626d15c);
+  font-weight: 400;
+}
+
+.btn.purple {
+  color: var(--main-2626d15c);
+}
+
+.btn.equal {
+  background-color: var(--main-2626d15c);
+  color: var(--white-4c6ea64b);
+}
+
+.btn-backspace {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100%;
+
+  transition: all 200ms ease;
+}
+
+.btn-backspace:active {
+  box-shadow: 0 2px 5px 10px var(--main-2626d15c);
+}
+
+.backspace-icon {
+  width: 30px;
+  height: 30px;
+}
+
+#w-node-_2650e9fd-2121-89f8-215b-88309d300278-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_7487d25a-fde9-8889-ea6c-b4823e9804ae-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-f73fd7e2-ca2f-8300-937c-2a4640c592ac-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-c8045954-ffbc-f99a-7a30-641b7b50cd55-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-f2ac47d9-9d8a-a47b-a4f2-c212ea3b08f9-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_35785604-ec10-6ad7-ed30-2dd70edcc4f6-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-c276be27-74c2-e3c0-766b-79cc2c912857-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_8e1195c0-f8d7-44b3-fc20-dfe280394a3a-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_0b75ff08-9145-98fd-bb3b-9369e7044969-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-e5db4573-eaa0-8d68-3a77-b0a06473370e-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_1f21dced-bb8e-b288-febe-d97b16308f77-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-d362bbd0-4154-ee26-d54a-c2909e89f612-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_0b6ed05f-17bb-2c73-6e75-ed6fe3cddc0b-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_76cb99b1-5d80-6793-92a9-7f85fba0f684-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_1a4353d3-515a-2956-196d-961d4f780314-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_7f3d7413-a660-48bf-bf57-d3048a0eb766-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_29c880f4-0df3-32d5-75c5-2a4843b5f2e6-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-f6f3fa08-fb35-c0c5-34e4-0e22534f050a-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_3189a791-a86d-1e7c-33ac-0850797767a0-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_76e27f3e-c259-f598-769f-de4179d0d2f9-f12dcd85 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}

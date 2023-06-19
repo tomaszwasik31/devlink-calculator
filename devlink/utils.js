@@ -154,7 +154,6 @@ export function useClickOut(ref, action) {
   React.useEffect(() => {
     function handleClickOutside(event) {
       if (ref.current?.contains(event.target)) return;
-      event.preventDefault();
       action();
     }
     document.addEventListener("mousedown", handleClickOutside);

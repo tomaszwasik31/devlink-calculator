@@ -2176,3 +2176,9 @@ textarea.w-select {
 .wf-layout-layout {
   display: grid;
 }
+
+:root {
+  --main-2626d15c: hsla(252.75862068965515, 100.00%, 65.88%, 1.00);
+  --white-4c6ea64b: hsla(300, 100.00%, 99.61%, 1.00);
+  --black-43573790: hsla(0, 0.00%, 0.00%, 1.00);
+}
