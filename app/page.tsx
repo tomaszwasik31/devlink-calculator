@@ -10,9 +10,11 @@ export default function Home() {
   });
 
   function handleNumberBtn(number: number) {
-    displayBig === "0"
-      ? setDisplayBig(number.toString())
-      : setDisplayBig((prevDisplay) => prevDisplay + number.toString());
+    if (displayBig.length < 5) {
+      displayBig === "0"
+        ? setDisplayBig(number.toString())
+        : setDisplayBig((prevDisplay) => prevDisplay + number.toString());
+    }
   }
 
   function handleOp(symbol: string) {
@@ -22,17 +24,29 @@ export default function Home() {
   }
 
   function add(a: number, b: number) {
+    if ((a + b).toString().length > 6) {
+      return (a + b).toPrecision(4);
+    }
     return a + b;
   }
   function subtract(a: number, b: number) {
+    if ((a - b).toString().length > 6) {
+      return (a - b).toPrecision(4);
+    }
     return a - b;
   }
 
   function multi(a: number, b: number) {
+    if ((a * b).toString().length > 6) {
+      return (a * b).toPrecision(4);
+    }
     return a * b;
   }
 
   function divide(a: number, b: number) {
+    if ((a / b).toString().length > 6) {
+      return (a / b).toPrecision(4);
+    }
     return a / b;
   }
 
