@@ -69,16 +69,19 @@ export default function Home() {
       setDisplayBig((prevDisplayBig) => prevDisplayBig.slice(0, -1));
     }
   }
-
   function calculate() {
     if (displaySmall.operation === "+") {
-      setDisplayBig(add(displaySmall.num, parseFloat(displayBig)));
+      setDisplayBig(add(displaySmall.num, parseFloat(displayBig)).toString());
     } else if (displaySmall.operation === "-") {
-      setDisplayBig(subtract(displaySmall.num, parseFloat(displayBig)));
+      setDisplayBig(
+        subtract(displaySmall.num, parseFloat(displayBig)).toString()
+      );
     } else if (displaySmall.operation === "*") {
-      setDisplayBig(multi(displaySmall.num, parseFloat(displayBig)));
+      setDisplayBig(multi(displaySmall.num, parseFloat(displayBig)).toString());
     } else if (displaySmall.operation === "/") {
-      setDisplayBig(divide(displaySmall.num, parseFloat(displayBig)));
+      setDisplayBig(
+        divide(displaySmall.num, parseFloat(displayBig)).toString()
+      );
     }
 
     clearDisplaySmall();
