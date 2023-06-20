@@ -19,4 +19,9 @@ declare function Calculator(props: {
   btnEqual?: Types.Devlink.RuntimeProps;
   btnMinus?: Types.Devlink.RuntimeProps;
   btnTimes?: Types.Devlink.RuntimeProps;
+  btnDivide?: Types.Devlink.RuntimeProps;
+  btnMc?: Types.Devlink.RuntimeProps;
+  btnBackspace?: Types.Devlink.RuntimeProps;
+  btnC?: Types.Devlink.RuntimeProps;
+  btnDot?: Types.Devlink.RuntimeProps;
 }): React.JSX.Element;

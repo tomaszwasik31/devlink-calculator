@@ -137,6 +137,11 @@
   color: var(--white-4c6ea64b);
 }
 
+.btn.empty {
+  opacity: 0;
+  cursor: default;
+}
+
 .btn-backspace {
   display: flex;
   flex-direction: row;

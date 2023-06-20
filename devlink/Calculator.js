@@ -21,6 +21,11 @@ export function Calculator({
   btnEqual = {},
   btnMinus = {},
   btnTimes = {},
+  btnDivide = {},
+  btnMc = {},
+  btnBackspace = {},
+  btnC = {},
+  btnDot = {},
 }) {
   return (
     <_Component
@@ -69,6 +74,7 @@ export function Calculator({
             options={{
               href: "#",
             }}
+            {...btnC}
           >
             {"C"}
           </_Builtin.Link>
@@ -82,6 +88,7 @@ export function Calculator({
             options={{
               href: "#",
             }}
+            {...btnMc}
           >
             {"MC"}
           </_Builtin.Link>
@@ -91,6 +98,7 @@ export function Calculator({
             options={{
               href: "#",
             }}
+            {...btnBackspace}
           >
             <_Builtin.Image
               className={_utils.cx(_styles, "backspace-icon")}
@@ -114,6 +122,7 @@ export function Calculator({
             options={{
               href: "#",
             }}
+            {...btnDivide}
           >
             {"÷"}
           </_Builtin.Link>
@@ -309,11 +318,12 @@ export function Calculator({
             options={{
               href: "#",
             }}
+            {...btnDot}
           >
             {"."}
           </_Builtin.Link>
           <_Builtin.Link
-            className={_utils.cx(_styles, "btn")}
+            className={_utils.cx(_styles, "btn", "empty")}
             id={_utils.cx(
               _styles,
               "w-node-_3189a791-a86d-1e7c-33ac-0850797767a0-f12dcd85"
