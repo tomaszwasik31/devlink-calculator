@@ -14,7 +14,7 @@ export default function RootLayout({
     <html lang="en">
       <style>
         @import
-        url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+        url(https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap);
       </style>
       <body>{children}</body>
     </html>
