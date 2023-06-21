@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Calculator } from "@/devlink";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
   });
 
   function handleNumberBtn(number: number) {
-    if (displayBig.length < 5) {
+    if (displayBig.length < 4) {
       displayBig === "0"
         ? setDisplayBig(number.toString())
         : setDisplayBig((prevDisplay) => prevDisplay + number.toString());
@@ -87,6 +87,18 @@ export default function Home() {
     clearDisplaySmall();
   }
 
+  function dot() {
+    displayBig.includes(".")
+      ? true
+      : setDisplayBig((prevDisplayBig) => prevDisplayBig.concat("."));
+  }
+
+  useEffect(() => {
+    if (displayBig.length > 8) {
+      setDisplayBig("to big");
+    }
+  }, [displayBig]);
+
   return (
     <Calculator
       displayBig={displayBig}
@@ -109,6 +121,7 @@ export default function Home() {
       btnC={{ onClick: clearAll }}
       btnMc={{ onClick: clearDisplaySmall }}
       btnBackspace={{ onClick: backspace }}
+      btnDot={{ onClick: dot }}
     />
   );
 }
